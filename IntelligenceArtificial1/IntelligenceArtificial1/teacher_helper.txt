@@ -1,0 +1,75 @@
+board[0][0] 
+# access of a board element
+
+
+def board_moves(board)
+# return lsit of moves
+# pro tips : look on the empty case
+
+def board_perform_move(board, move)
+# copia do tabuleiro com o moviemento feito
+# b2 = board.deepcopy()
+
+#implementar subclasse de problem
+class solitaire(Problem) 
+	def __init__(self, board):
+		self.initial=sol_state(board)
+		# otra coisas..
+	def actions(self, state):
+		#see what are the possible moves
+	def result(self, state, action):
+		#do the movment and create a new state
+	def path_cost(self, c, s1, a, s2):
+		#cost of s1 to s2
+		#c = cost until s1
+		return c + 1
+	def goal_test(self, state):
+		#get state, verify if there is a solution
+		#solution when there is only one piece on the board
+	def h(self, node):
+		# node.state = buscar o stado
+		# # of piece - 1 [NO]
+		# find a heuristic
+		# pro tips: try the simple case to see if it works
+		#			try other heuristic to resolve in < 1min
+		#			
+
+#DSF O(n #nb of piece) it will procura todas as procuras, GREEDY, A*
+
+
+#state
+class sol_state :
+	#at least the tab
+	def __init__(self, board) :
+		self.board = board
+		#pro tips: # of case sempty or used
+	def __lt__ (state, otherstate) :
+		# nao se preocuppa agora
+		#lista a < list b
+		# if foo < bar then true
+		# estado minor
+
+
+#how to use algorithm
+game = solitaire(board)
+p = InstrumentedProblem(game)
+result = dept_first_tree_search(p)
+result = greedy_best_first_graph_search(p, ph)
+result = astar_search(p)
+
+#none = no solution
+#node = solution
+
+result.solution() #devolves lista de sequencia de movimentos
+result.path() 	  #devolve a lista de stados
+#pro tips, try a simple table and see if it works
+
+#final step, improve heuristic
+
+
+#exrtra
+import time
+start = time.time()
+...
+end = time.time()
+end.start()
